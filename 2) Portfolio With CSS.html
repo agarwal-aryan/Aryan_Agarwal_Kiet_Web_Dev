@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Aryan Agarwal" />
+    <meta
+      name="description"
+      content="Portfolio of Aryan Agarwal — projects, skills and contact"
+    />
+    <title>Aryan Agarwal — Portfolio</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="./2) project2.css" />
+
+    <!-- Internal CSS (small overrides / demo of internal CSS) -->
+    <style>
+      /* internal CSS example: small theme tweak for print or exam demo */
+      @media print {
+        header nav {
+          display: none;
+        } /* hide nav on print */
+        body {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="logo">Aryan Agarwal</h1>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- mobile menu toggle could be added later -->
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / Intro -->
+      <section id="home" class="hero container">
+        <div class="hero-left">
+          <img
+            src="./Photo.jpeg"
+            alt="Aryan Agarwal — profile picture"
+            class="profile-photo"
+          />
+        </div>
+        <div class="hero-right">
+          <h2>Web Development Student & Aspiring Full-Stack Developer</h2>
+          <p>
+            Hi — I'm <strong>Aryan</strong>. I build simple, accessible websites
+            and learning projects like <em>EduConnect</em>. I use HTML, CSS, and
+            JavaScript and enjoy working on UI/UX improvements and small web
+            apps.
+          </p>
+          <p><a class="cta" href="#projects">See my projects</a></p>
+        </div>
+      </section>
+
+      <!-- Projects Showcase -->
+      <section id="projects" class="projects container">
+        <h2>Projects</h2>
+        <p class="lead">
+          A selection of recent work — clickable cards with short descriptions.
+        </p>
+
+        <!-- Grid of projects -->
+        <div class="project-grid">
+          <!-- Project card (repeat these) -->
+          <article class="project-card">
+            <img
+              src="proj-educonnect.png"
+              alt="EduConnect project screenshot"
+            />
+            <div class="card-content">
+              <h3>EduConnect</h3>
+              <p>
+                Lecture upload & student dashboard system — HTML/CSS/JS + basic
+                server-side mockup.
+              </p>
+              <p class="tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </p>
+              <div class="card-actions">
+                <a href="#" class="btn">View</a>
+                <a href="#" class="btn ghost">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="proj-portfolio.png" alt="Portfolio site screenshot" />
+            <div class="card-content">
+              <h3>Portfolio Website</h3>
+              <p>
+                Responsive portfolio built using CSS Grid and Flexbox. Simple
+                and accessible layout.
+              </p>
+              <p class="tags"><span>HTML</span><span>CSS Grid</span></p>
+              <div class="card-actions">
+                <a href="#" class="btn">View</a>
+                <a href="#" class="btn ghost">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="proj-ui.png" alt="UI mockups screenshot" />
+            <div class="card-content">
+              <h3>UI/UX Mockups</h3>
+              <p>
+                Design experiments and small CSS animations to improve
+                interactivity and readability.
+              </p>
+              <p class="tags"><span>UI/UX</span><span>Prototype</span></p>
+              <div class="card-actions">
+                <a href="#" class="btn">View</a>
+                <a href="#" class="btn ghost">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more project-card articles as needed -->
+        </div>
+      </section>
+
+      <!-- About / Skills -->
+      <section id="about" class="about container">
+        <h2>About & Skills</h2>
+        <div class="about-grid">
+          <div>
+            <h3>About Me</h3>
+            <p>
+              I am a student learning web development. I focus on writing
+              semantic HTML, clean CSS, and building small interactive projects.
+            </p>
+          </div>
+
+          <div>
+            <h3>Skills</h3>
+            <ul class="skill-list">
+              <li>HTML5 & Semantic Markup</li>
+              <li>CSS3 (Flexbox, Grid, Responsive)</li>
+              <li>Basic JavaScript</li>
+              <li>Version Control (Git)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact" class="contact container">
+        <h2>Contact Me</h2>
+        <p class="lead">
+          Want to collaborate or see code? Send a short message.
+        </p>
+
+        <form class="contact-form" method="post" action="#" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="Your full name"
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="you@example.com"
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Short message..."
+            ></textarea>
+          </div>
+
+          <div class="form-row actions">
+            <button type="submit" class="btn">Send Message</button>
+            <button type="reset" class="btn ghost">Reset</button>
+          </div>
+        </form>
+
+        <address class="contact-info">
+          <p>
+            Email:
+            <a href="mailto:aryanagarwal@example.com"
+              >aryanagarwal@example.com</a
+            >
+          </p>
+          <p>Phone: +91 98765 43210</p>
+        </address>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Aryan Agarwal · Built with HTML & CSS</p>
+      </div>
+    </footer>
+  </body>
+</html>
